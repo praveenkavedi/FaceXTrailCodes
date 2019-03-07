@@ -1,0 +1,17 @@
+
+# Skill name: "Facex" by Facex Team
+# Test scope: LaunchFacex, goodbye
+# Description: General test suite for all intents
+
+---
+configuration:
+  locales: en-US
+---
+- test: Launch faceX intent and activate Good bye intent
+- LaunchFacex:
+- goodbye:
+  - prompt:
+    - Goodbye, have a nice day.
+    - Goodbye, thanks for visting us.
+    - Goodbye, thanks for visting us. Hope you have enjoyed our service.
+    

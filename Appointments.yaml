@@ -1,0 +1,28 @@
+---
+configuration:
+  locales: en-US
+
+---
+- test: Launch facex skill, and open the appointments for the therapist
+- LaunchFacex:
+- OpenAppointments: open Facex appoinments *
+  - prompt:
+    - Hello! Welcome back to Facex Appointments. Sure let me look it up for you *
+- FoundAppointments: 
+  - prompt:
+    - I got it. We have our next appointment with <name of the customer>. Would you start setup the light, room fragrance and music as per the customer preference?*
+- Yesintent:
+  - prompt:
+    - Thank you! Setting up the customer preferences.
+- Nointent:
+  - prompt:
+    - 
+
+---
+- test: Launch facex skill, and open the appointments for the therapist
+- OpenAppointments: open Facex appoinments *
+  - prompt:
+    - Hello! Welcome back to Facex Appointments. Sure let me look it up for you *
+- NoAppointments: 
+  - prompt:
+    - Sorry, I am not able to find any appointments.*
